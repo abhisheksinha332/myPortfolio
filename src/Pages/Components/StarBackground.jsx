@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 
 const StarBackground = () => {
   const [stars, setStars] = useState([]);
+  const [meteors, setMeteors] = useState([]);
 
   useEffect(() => {
     generateStars();
+    generateMeteors();
   }, []);
 
   const generateStars = () => {
@@ -25,6 +27,23 @@ const StarBackground = () => {
     setStars(newStars);
   };
 
+  const generateMeteors = () => {
+    const count = 4;
+    const newMeteors = [];
+
+    for (let i = 0; i < count; i++) {
+      newMeteors.push({
+        id: i,
+        x: Math.random() * 120,
+        y: Math.random() * 100,
+        delay: `${Math.random() * 10}s`,
+        duration: `${Math.random() * 3 + 2}s`,
+      });
+    }
+
+    setMeteors(newMeteors);
+  };
+
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       {stars.map((star) => (
@@ -39,6 +58,21 @@ const StarBackground = () => {
             top: `${star.y}%`,
             opacity: star.opacity,
             animationDuration: `${star.animationDuration}s`,
+          }}
+        />
+      ))}
+      {meteors.map((meteor) => (
+        <div
+          key={meteor.id}
+          className="meteor"
+          style={{
+            position: "absolute",
+            width: `${meteor.size * 50}px`,
+            height: `${meteor.size}px`,
+            left: `${meteor.x}%`,
+            top: `${meteor.y}%`,
+            animationDelay: meteor.delay,
+            animationDuration: `${meteor.animationDuration}s`,
           }}
         />
       ))}
