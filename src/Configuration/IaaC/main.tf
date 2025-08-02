@@ -35,16 +35,17 @@ resource "azurerm_kubernetes_cluster" "myAKS" {
 
   default_node_pool {
     name = "default"
-    node_count = 1
+    node_count = 2
     vm_size = "Standard_DS2_v2"
+
   }
 
   linux_profile {
     admin_username = "ubuntu"
 
-    ssh_key {
-        key_data = var.ssh_public_key
-    }
+        ssh_key {
+            key_data = var.ssh_public_key
+        }
   }
   identity {
     type = "SystemAssigned"
