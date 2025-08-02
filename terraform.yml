@@ -20,7 +20,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Syste,.SourceWorkingDirectory)/src/Configuration/Iaac'
+    SourceFolder: '$(System.SourceWorkingDirectory)/src/Configuration/Iaac'
     Contents: '**'
     TargetFolder: '$(System.Build.ArtifactStagingDirectory)'
 
