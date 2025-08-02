@@ -30,7 +30,7 @@ resource "azurerm_resource_group" "myPortfolio" {
 resource "azurerm_kubernetes_cluster" "myAKS" {
   name                = "myAKS"
   location            = azurerm_resource_group.myPortfolio.location
-  resource_group_name = azurerm_resource_group.myPortfolio.nam
+  resource_group_name = azurerm_resource_group.myPortfolio.name
   dns_prefix          = "myaks"
 
   default_node_pool {
