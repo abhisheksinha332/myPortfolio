@@ -202,3 +202,22 @@
 .btn {
   border-radius: 9999px;
 }
+
+.about-me-button {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 25px 10px;
+
+}
+
+.paper-background {
+  background-color: hsl(var(--card));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-color {
+  color: hsl(var(--foreground));
+}

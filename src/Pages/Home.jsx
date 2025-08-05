@@ -2,6 +2,7 @@ import ThemeToggle from "./Components/ThemeToggle";
 import StarBackground from "./Components/StarBackground";
 import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
+import About from "./Components/About";
 
 
 
@@ -14,7 +15,9 @@ const Home = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <About />
       </main>
+
     </div>
   );
 };

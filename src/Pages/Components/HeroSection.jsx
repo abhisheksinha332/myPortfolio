@@ -15,10 +15,8 @@ const HeroSection = () => {
                 DevOps Engineer with 3 years of IT experience, including 2 years in DevOps and 1 year in Monitoring & Incident Management. Worked closely with the Microsoft team to support the Renault-Nissan Alliance (RNA) on Microsoft Connected Vehicle Platform (MCVP). Recognized for developing impactful automations that reduced manual effort and human error. Early experience in IoT and AI through hands-on internship work.
             </p>
             <div className="flex justify-center space-x-4 animate-fade-in-delay-4 opacity-0">
-                <Button className="primary-button" sx={{ borderRadius: '9999px' }} variant="contained" href="#contact">
-                    <a href="#projects" className="">
-                        View Projects
-                    </a>
+                <Button href="#projects" className="primary-button" sx={{ borderRadius: '9999px' }} variant="contained">
+                    View Projects
                 </Button>
             </div>
         </div>
