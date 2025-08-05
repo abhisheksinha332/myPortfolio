@@ -9,19 +9,18 @@ import {Briefcase, Code, User} from 'lucide-react';
 const About = () => {
   return (
     <section >
-      {""}
       <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 mt-8 text-center">About <span className="primary-color">Me</span> </h2>
       </div>
 
-      <Box sx={{ flexGrow: 1 }} className="container mx-auto px-12">
+      <Box sx={{ flexGrow: 1 }} className="container mx-auto px-12 mb-12">
       <Grid container spacing={18}>
         <Grid size={{ xs: 12, sm: 6 }} sx={
           {
             marginTop: '30px',
           }
         } >
-          <h3 className="text-2xl font-semibold">Senior Engineer - DevOps & Automation</h3>
+          <h3 className="text-2xl font-semibold">Senior Engineer - DevOps & Automation</h3> <br/>
            <p className="text-muted-foreground">
           DevOps Engineer with 3 years of IT experience, including 2 years in DevOps and 1 year in Monitoring & Incident Management. </p>
           <p>Worked closely with the Microsoft team to support the Renault-Nissan Alliance (RNA) on Microsoft Connected Vehicle Platform (MCVP). Recognized for developing impactful automations that reduced manual effort and human error. Early experience in IoT and AI through hands-on internship work.
@@ -60,7 +59,7 @@ const About = () => {
             </div>
               </div>
               <div>
-              <p className='text-color flex items-center space-x-4'>Proficient in DevOps tools and practices and Azure Cloud and also in web Devolopment</p>
+              <p className='text-color flex items-center space-x-4'>Proficient in DevOps tools and practices and Azure Cloud and also in web Development</p>
               </div>
               
             </Paper>
@@ -95,7 +94,6 @@ const About = () => {
               height: '30%',
               color: '#fff',
               opacity: 0.3,
-              backgroundColor: 'primary-color',
               margin: '25px 0px',
               ":hover": {
                 opacity: 0.4,
