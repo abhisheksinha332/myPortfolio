@@ -80,16 +80,7 @@ const Navbar = () => {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
+      
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -134,17 +125,15 @@ const Navbar = () => {
           >
             Abhishek Sinha
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' , justifyContent: 'right', padding: '0 75px 0 0'} }}>
+             {navItems.map((item) => (
+                <MenuItem key={item.name} onClick={handleCloseNavMenu}>
+                  <Typography sx={{ textAlign: 'center' }}>
+                    <a href={item.href}>{item.name}</a>
+                  </Typography>
+                </MenuItem>
+              ))}
+            </Box>
         </Toolbar>
       </Container>
     </AppBar>
