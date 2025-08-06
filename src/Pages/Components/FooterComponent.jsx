@@ -1,4 +1,4 @@
-import { ArrowUp } from "lucide-react";
+
 
 const FooterComponent = () => {
 
