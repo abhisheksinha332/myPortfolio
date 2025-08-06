@@ -50,7 +50,7 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredSkills.map((skill, index) => (
-            <div key={index} className="bg-card p-6 rounded-lg shadow-xs card-hover hover:shadow-xl transition-shadow duration-300">
+            <div key={index} className="skill-card p-6 rounded-lg shadow-xs card-hover hover:shadow-xl transition-shadow duration-300">
               <div>
                     <h3 className="text-lg font-semibold">{skill.name}</h3>
               </div>
