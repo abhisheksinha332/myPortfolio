@@ -1,7 +1,4 @@
 import { ArrowRight, Github, Tags } from "lucide-react";
-import news from "../../assets/news-min.png";
-import insomnia from "../../assets/insomnia-min.PNG";
-import spotify from "../../assets/spotify-min.png";
 
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -20,21 +17,21 @@ const Projects = [
     description: "A music application supported by Spotify data that lets users to search songs of different categories, genres and singers that is being fetched by the Spotify API.", 
     link: "https://github.com/abhisheksinha332/react-spotify-app", 
     Tags: ['React', 'Spotify API', 'Music'],
-    image: spotify
+    image: "https://abhishek-sinha.netlify.app/assets/img/project-1/spotify-min.PNG"
 },
   { id: 2, 
     title: "SOCIAL MEDIA WEBSITE",
     description: "Application in which you can create your own post and also modify, delete your posts as well as see others post. Created using Reactjs, Nodejs, Expressjs, mongoose, mongoDb and many more...",
      link: "https://github.com/abhisheksinha332/MERNstack", 
      Tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-     image: insomnia
+     image: "https://abhishek-sinha.netlify.app/assets/img/project-1/insomnia-min.PNG"
 },
   { id: 3, 
     title: "NEWS WEBSITE",
      description: "A voice controlled website for news information which acts accordingly to the users voice with the help of Alan AI.",
     link: "https://github.com/abhisheksinha332/react-news-ai", 
     Tags: ['React', 'Alan AI', 'News'],
-    image: news
+    image: "https://abhishek-sinha.netlify.app/assets/img/project-1/news-min.PNG"
 },
 ];
 
