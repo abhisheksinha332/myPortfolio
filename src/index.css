@@ -235,10 +235,22 @@
 
 .arrow-btn{
   
-  background: rgba(255, 255, 255, 0.1); /* or use hsl/hsla */
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* for Safari support */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   box-shadow: 0 8px 20px rgba(121, 5, 246, 0.1);
- color: rgb(99, 1, 168)
+  color: rgb(99, 1, 168);
+  padding: 0.75rem;
+  border-radius: 9999px;
+  cursor: pointer;
+
+  /* Smooth transition */
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-btn:hover {
+  background: rgb(99, 1, 168); /* Invert bg */
+  color: white;               /* Invert text */
+  box-shadow: 0 8px 30px rgba(121, 5, 246, 0.3);
 }
