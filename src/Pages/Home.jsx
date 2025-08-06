@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import About from "./Components/About";
 import SkillsSection from "./Components/SkillsSection";
+import ProjectSection from "./Components/ProjectSection";
 
 
 
@@ -18,6 +19,8 @@ const Home = () => {
         <HeroSection />
         <About />
         <SkillsSection />
+        <ProjectSection />
+        {/* Add other sections like Contact, Footer, etc. here */}
       </main>
 
     </div>
