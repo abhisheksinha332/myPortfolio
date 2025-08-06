@@ -8,7 +8,7 @@ import {Briefcase, Code, User} from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" >
       <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 mt-8 text-center">About <span className="primary-color">Me</span> </h2>
       </div>
@@ -41,10 +41,10 @@ const About = () => {
             {
               height: '30%',
               color: '#fff',
-              opacity: 0.3,
+              opacity: 0.9,
               margin: '25px 0px',
               ":hover": {
-                opacity: 0.4,
+                opacity: 1,
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                 transition: 'all 0.3s ease-in-out',
               }
@@ -67,10 +67,10 @@ const About = () => {
             {
               height: '30%',
               color: '#fff',
-              opacity: 0.3,
+              opacity: 0.9,
               margin: '25px 0px',
               ":hover": {
-                opacity: 0.4,
+                opacity: 1,
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                 transition: 'all 0.3s ease-in-out',
               }
@@ -93,10 +93,10 @@ const About = () => {
             {
               height: '30%',
               color: '#fff',
-              opacity: 0.3,
+              opacity: 0.9,
               margin: '25px 0px',
               ":hover": {
-                opacity: 0.4,
+                opacity: 1,
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                 transition: 'all 0.3s ease-in-out',
               }
