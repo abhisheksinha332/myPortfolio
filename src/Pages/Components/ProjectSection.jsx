@@ -49,7 +49,7 @@ const ProjectSection = () => {
              {Projects.map((project) => (
 
           <div key={project.id} >
-            <Card sx={{ maxWidth: 345, backgroundColor: 'hsl(var(--card))' }} className="group bg-card rounded-lg overfolow-hidden card-hover">
+            <Card  sx={{ maxWidth: 345, backgroundColor: 'hsl(var(--card))' }} className="group bg-card rounded-lg overfolow-hidden card-hover">
                 <CardHeader title={project.title} />
                 <CardMedia component="img" height="194" image={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <CardContent>

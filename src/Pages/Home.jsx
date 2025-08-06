@@ -5,6 +5,7 @@ import HeroSection from "./Components/HeroSection";
 import About from "./Components/About";
 import SkillsSection from "./Components/SkillsSection";
 import ProjectSection from "./Components/ProjectSection";
+import ContactSection from "./Components/ContactSection";
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
         <About />
         <SkillsSection />
         <ProjectSection />
+        <ContactSection />
         {/* Add other sections like Contact, Footer, etc. here */}
       </main>
 
