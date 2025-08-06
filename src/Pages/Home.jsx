@@ -6,6 +6,8 @@ import About from "./Components/About";
 import SkillsSection from "./Components/SkillsSection";
 import ProjectSection from "./Components/ProjectSection";
 import ContactSection from "./Components/ContactSection";
+import FooterComponent from "./Components/FooterComponent";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 
@@ -23,8 +25,10 @@ const Home = () => {
         <ProjectSection />
         <ContactSection />
         {/* Add other sections like Contact, Footer, etc. here */}
+        <FooterComponent />
+        <ScrollToTop />
       </main>
-
+        
     </div>
   );
 };

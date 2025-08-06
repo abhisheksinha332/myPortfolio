@@ -19,6 +19,7 @@
     "bootstrap": "^5.3.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "font-awesome": "^4.7.0",
     "lucide-react": "^0.534.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
