@@ -3,6 +3,7 @@ import StarBackground from "./Components/StarBackground";
 import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import About from "./Components/About";
+import SkillsSection from "./Components/SkillsSection";
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <About />
+        <SkillsSection />
       </main>
 
     </div>

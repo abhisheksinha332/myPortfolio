@@ -8,7 +8,7 @@ import {Briefcase, Code, User} from 'lucide-react';
 
 const About = () => {
   return (
-    <section >
+    <section id="about">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 mt-8 text-center">About <span className="primary-color">Me</span> </h2>
       </div>
