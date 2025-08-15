@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@lottiefiles/dotlottie-react": "^0.15.0",
     "@mui/icons-material": "^7.3.0",
     "@mui/material": "^7.3.0",
     "@radix-ui/react-toast": "^1.2.14",
@@ -20,10 +21,12 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "font-awesome": "^4.7.0",
+    "lottie-react": "^2.4.1",
     "lucide-react": "^0.534.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
+    "react-lottie": "^1.2.10",
     "react-router-dom": "^7.7.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11"

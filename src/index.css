@@ -51,6 +51,21 @@
   color: white;
 }
 
+.light {
+  background-color: blue;
+  color: blueviolet;
+  background-image: url('../src/assets/home-banner1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+body.light {
+  background-color: blue;
+  color: blueviolet;
+  background-image: url('./assets/home-banner1.png');
+  background-size: cover;
+  background-position: center;
+}
 
 .container {
   margin-inline: auto;
@@ -230,6 +245,8 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* for Safari support */
   box-shadow: 0 8px 20px rgba(121, 5, 246, 0.1);
+  padding: 30px 50px;
+  width: 80%;
  
 }
 
@@ -264,4 +281,12 @@
   background: rgb(99, 1, 168); /* Invert bg */
   color: white;               /* Invert text */
   box-shadow: 0 8px 30px rgba(121, 5, 246, 0.3);
+}
+
+.intro-pic{
+    height: 20%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
 }
