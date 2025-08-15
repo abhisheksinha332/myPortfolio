@@ -1,8 +1,10 @@
 import { Button } from "@mui/material";
+import { useRef } from "react";
 import SendIcon from '@mui/icons-material/Send';
 import { Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import { useState, useEffect } from "react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -11,6 +13,7 @@ const ContactSection = () => {
     const [isSubmitted, setIsSubmitted] = useState(false)
     const [formData, setFormData] = useState({name: '',email: '',message: ''});
 
+    const form = useRef();
 
     useEffect(() => {
         console.log("isSubmitted changed:", isSubmitted);
@@ -24,6 +27,23 @@ const ContactSection = () => {
     const handleSubmit = (e) => {
         
         e.preventDefault()
+
+        emailjs.sendForm(
+  import.meta.env.VITE_EMAILJS_SERVICES,
+  import.meta.env.VITE_EMAILJS_TEMPLATE,
+  form.current,
+  {
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+  }
+)
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
 
         setIsSubmitted(true)
         
@@ -101,7 +121,7 @@ const ContactSection = () => {
 
                     <div className="" >
                         <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-                        <form className="space-y-6" onSubmit={handleSubmit}>
+                        <form ref={form} className="space-y-6" onSubmit={handleSubmit}>
                             <label htmlFor="name" className="block text-sm font-medium mb-2 ">Your Name</label>
                             <input type="text" onChange={handleChange} value={formData.name} placeholder="Abhishek Sinha..." id="name" name="name" required className="w-full px-4 py-3 rounded-md border border-input bg-background focus: outline-hidden focus:ring-2 focus:ring-primary"/>
                              <label htmlFor="email" className="block text-sm font-medium mb-2 ">Your Email</label>
