@@ -9,6 +9,7 @@ import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Tooltip, IconButton, Avatar } from "@mui/material";
 
 
 
@@ -24,6 +25,7 @@ const navItems = [
 const Navbar = () => {
 
     const [isScrolled, setIsScrolled] = useState(false);    
+   
 
     
     useEffect(() => {
@@ -129,6 +131,30 @@ const Navbar = () => {
                 </MenuItem>
               ))}
             </Box>
+            <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenNavMenu} sx={{ p: 0 }}>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              </IconButton>
+            </Tooltip>
+            <Menu
+              sx={{ mt: '45px' }}
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+            >
+            </Menu>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
