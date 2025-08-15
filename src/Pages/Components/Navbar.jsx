@@ -129,7 +129,6 @@ const Navbar = () => {
                 </MenuItem>
               ))}
             </Box>
-            
         </Toolbar>
       </Container>
     </AppBar>

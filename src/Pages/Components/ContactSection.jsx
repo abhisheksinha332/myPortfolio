@@ -16,7 +16,6 @@ const ContactSection = () => {
     const form = useRef();
 
     useEffect(() => {
-        console.log("isSubmitted changed:", isSubmitted);
     }, [isSubmitted]);
 
     const handleChange = (e) => {
