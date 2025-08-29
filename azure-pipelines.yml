@@ -24,7 +24,7 @@ steps:
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
 
 - task: PublishBuildArtifacts@1
   inputs:
