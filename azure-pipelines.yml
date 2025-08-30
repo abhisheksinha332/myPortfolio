@@ -11,6 +11,18 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    echo "VITE_EMAILJS_SERVICES=$(VITE_EMAILJS_SERVICES)" >> .env.production
+    echo "VITE_EMAILJS_TEMPLATE=$(VITE_EMAILJS_TEMPLATE)" >> .env.production
+    echo "VITE_EMAILJS_PUBLIC_KEY=$(VITE_EMAILJS_PUBLIC_KEY)" >> .env.production
+  displayName: "Generate env file"
+  env:
+    VITE_EMAILJS_SERVICES: $(VITE_EMAILJS_SERVICES)
+    VITE_EMAILJS_TEMPLATE: $(VITE_EMAILJS_TEMPLATE)
+    VITE_EMAILJS_PUBLIC_KEY: $(VITE_EMAILJS_PUBLIC_KEY)
+
+
+- script: |
+
     npm ci
     npm run build
   displayName: 'npm install and build'
