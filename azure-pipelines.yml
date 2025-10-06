@@ -27,7 +27,7 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-
+- bash: ls -R $(System.DefaultWorkingDirectory)
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'dist'
