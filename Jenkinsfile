@@ -1,30 +1,33 @@
-    pipeline {
-        agent any 
+pipeline {
+    //  agent any
+    agent { myDocker { image 'node:14-alpine' } }
+     
 
-        stages {
-            stage('Pull Docker Image') {
-                steps {
-                    script {
-                        // Pull an image from Docker Hub
-                        docker.image('ubuntu:latest').pull() 
+tools {
+        nodejs 'myNodeJs'
+    }
+    stages {
+        stage('Install Docker'){
+            steps {
+                script {
+                    sh 'docker --version'
 
-                        // Pull an image from a private registry (if credentials are set up)
-                        // docker.withRegistry('https://myregistry.example.com', 'credentials-id') {
-                        //     docker.image('my-private-image:1.0').pull()
-                        // }
-                    }
+
                 }
             }
-            stage('Use Docker Image') {
-                steps {
-                    script {
-                        // You can then use this image to run containers
-                        docker.image('ubuntu:latest').inside {
-                            sh 'echo "Hello from inside the container!"'
-                            sh 'ls -l /'
-                        }
-                    }
+        }
+        stage('Build') {
+          
+            steps {
+                echo 'Building...'
+
+                script{
+                    sh 'npm install'
+                } 
+                script{
+                    sh 'npm run build'
                 }
             }
         }
     }
+}
