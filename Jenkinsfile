@@ -7,15 +7,6 @@ tools {
         nodejs 'myNodeJs'
     }
     stages {
-        stage('Install Docker'){
-            steps {
-                script {
-                    sh 'docker --version'
-
-
-                }
-            }
-        }
         stage('Build') {
           
             steps {
