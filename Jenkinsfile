@@ -7,6 +7,16 @@ tools {
         nodejs 'myNodeJs'
     }
     stages {
+        stage('Install Docker'){
+            steps {
+                script {
+                    sh 'docker --version'
+                    sh 'sudo apt update'
+                    sh 'sudo apt install docker.io'
+                    sh 'docker --version'
+                }
+            }
+        }
         stage('Build') {
           
             steps {
