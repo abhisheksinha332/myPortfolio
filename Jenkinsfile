@@ -1,6 +1,6 @@
 pipeline {
     // agent any
-    agent { docker { image 'node:14-alpine' } }
+    agent { myDocker { image 'node:14-alpine' } }
 
 tools {
         nodejs 'myNodeJs'
