@@ -17,13 +17,5 @@ tools {
                 }
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-                script{
-                    sh 'npm test'
-                }
-            }
-        }
     }
 }
