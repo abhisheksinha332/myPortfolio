@@ -3,9 +3,9 @@ pipeline {
     agent { docker { image 'node:14-alpine' } }
      
 
-tools {
-        nodejs 'myNodeJs'
-    }
+// tools {
+//         nodejs 'myNodeJs'
+//     }
     stages {
         stage('Build') {
           
