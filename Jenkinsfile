@@ -8,7 +8,7 @@ tools {
     }
     stages {
         stage('Build') {
-            agent { docker { image 'node:22.20.0-alpine3.22' } }
+          
             steps {
                 echo 'Building...'
 
